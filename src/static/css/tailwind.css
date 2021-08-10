@@ -30,11 +30,19 @@ body pre[class*="language-"] {
 }
 
 .body-copy {
-  @apply max-w-3xl text-2xl leading-normal font-serif;
+  @apply max-w-3xl text-xl leading-normal font-serif;
+  
+  @screen lg {
+    @apply text-2xl;
+  }
 }
 
 .body-copy > p:not(.first) {
-  @apply indent-12;
+  @apply indent-6;
+
+  @screen lg {
+    @apply indent-12;
+  }
 }
 
 .link {
