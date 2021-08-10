@@ -2,20 +2,34 @@ const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  mode: 'jit',  
   purge: {
     mode: "all",
     content: [
-      //"./**/*.html",
-      "./src/**/*.{html,njk}",
+      "./**/*.html",
     ],
     options: {
       whitelist: [],
     },
   },
   theme: {
+    screens: {
+      'xs': '340px',
+      'sm': '600px',
+      'md': '900px',
+      'lg': '1200px',
+      'xl': '1480px',
+      '2xl': '1800px',
+    },
     container: {
       center: true,
+      screens: {
+        //'xs': 'none',
+        //'sm': 'none',
+        'md': '900px',
+        'lg': '1200px',
+        'xl': '1480px',
+        '2xl': '1800px',
+      }
     },
     colors: {
       transparent: 'transparent',
@@ -37,13 +51,10 @@ module.exports = {
         '900': '#200769',
       }
     },
-    textIndent: theme => theme('spacing'),
-    
     textIndent: (theme, { negative }) => ({
       ...theme('spacing'),
       ...negative(theme('spacing')),
     }),
-
     extend: {
       fontFamily: {
         "display": ["raleway", ...defaultTheme.fontFamily.sans],

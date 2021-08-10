@@ -71,7 +71,14 @@ body pre[class*="language-"] {
 }
 
 #index-hero {
-  clip-path: url(#hero-mask);
-  height: 105vh;
-  @apply bg-purple;
+  background-image: url(/static/img/porch.jpg);  
+  
+  @apply bg-cover bg-center bg-fixed bg-purple;
+}
+
+@screen lg {
+  #index-hero {
+    clip-path: url(#hero-mask);
+    min-height: 105vh;
+  }
 }
