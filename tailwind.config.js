@@ -2,9 +2,13 @@ const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',  
   purge: {
     mode: "all",
-    content: ["./**/*.html"],
+    content: [
+      //"./**/*.html",
+      "./src/**/*.{html,njk}",
+    ],
     options: {
       whitelist: [],
     },

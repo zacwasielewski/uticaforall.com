@@ -1,14 +1,14 @@
 ---
 items:
   - text: Meet Celeste
-    url: "/meet-celeste"
+    url: "#"
     items:
       - text: Celeste’s Vision for Utica
         url: "/vision"
       - text: About Celeste
         url: "/about"
   - text: Get Involved
-    url: "/get-involved"
+    url: "#"
     items:
       - text: Volunteer
         url: "/volunteer"
@@ -16,7 +16,7 @@ items:
         url: "/events"
       - text: Request a Lawn Sign
         url: "/lawn-sign"
-  - text: Resources
+  - text: Learn
     url: "#"
     items:
       - text: Newsletter

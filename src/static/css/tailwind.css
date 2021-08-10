@@ -15,7 +15,6 @@ h1 {
 }
 
 h3 {
-  @apply text-2xl font-bold mb-3;
 }
 
 svg {
@@ -30,20 +29,20 @@ body pre[class*="language-"] {
 }
 
 .body-copy {
+  @apply text-3xl; /* WHAT! TAilwind is applying line-height in rems with this */
+}
+
+/*
+.body-copy {
   @apply max-w-3xl text-xl leading-normal font-serif;
-  
-  @screen lg {
-    @apply text-2xl;
-  }
+  @apply lg:text-2xl;
 }
 
 .body-copy > p:not(.first) {
-  @apply indent-6;
-
-  @screen lg {
-    @apply indent-12;
-  }
+  @apply indent-8;
+  @apply sm:indent-16;
 }
+*/
 
 .link {
   @apply border-b-2 border-purple border-opacity-30;
