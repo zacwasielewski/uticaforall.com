@@ -32,7 +32,6 @@ body pre[class*="language-"] {
   @apply text-3xl; /* WHAT! TAilwind is applying line-height in rems with this */
 }
 
-/*
 .body-copy {
   @apply max-w-3xl text-xl leading-normal font-serif;
   @apply lg:text-2xl;
@@ -42,7 +41,6 @@ body pre[class*="language-"] {
   @apply indent-8;
   @apply sm:indent-16;
 }
-*/
 
 .link {
   @apply border-b-2 border-purple border-opacity-30;
