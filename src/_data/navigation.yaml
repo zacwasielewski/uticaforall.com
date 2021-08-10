@@ -10,8 +10,8 @@ items:
   - text: Get Involved
     url: "#"
     items:
-      - text: Volunteer
-        url: "/volunteer"
+      - text: Join Our Team
+        url: "/join"
       - text: Events
         url: "/events"
       - text: Request a Lawn Sign
