@@ -1,15 +1,25 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:ital@0;1&display=swap');*/
+@import url("https://use.typekit.net/isj2oqo.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /*Your Custom CSS Goes here*/
 
+body {
+  @apply text-purple-900;
+}
+
 h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
 }
 
 h3 {
   @apply text-2xl font-bold mb-3;
+}
+
+svg {
+  fill: currentColor;
 }
 
 /* Syntax Highlighting*/
@@ -17,4 +27,44 @@ h3 {
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
+}
+
+.body-copy {
+  @apply max-w-3xl text-2xl leading-normal font-serif;
+}
+
+.body-copy > p:not(.first) {
+  @apply indent-12;
+}
+
+.link {
+  @apply border-b-2 border-purple border-opacity-30;
+}
+
+.link:hover {
+  @apply border-opacity-80 transition-all;
+}
+
+.link.white {
+  @apply border-b-2 border-white border-opacity-30;
+}
+
+.link.white:hover {
+  @apply border-opacity-80 transition-all;
+}
+
+.button {
+  @apply inline-block text-white no-underline py-3 px-5 uppercase tracking-wide rounded;
+  @apply bg-gradient-to-b from-purple-600 to-purple-700;
+  @apply transform transition;
+}
+
+.button:hover {
+  @apply transform scale-105 transition;
+}
+
+#index-hero {
+  clip-path: url(#hero-mask);
+  height: 105vh;
+  @apply bg-purple;
 }

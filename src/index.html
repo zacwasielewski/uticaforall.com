@@ -4,19 +4,44 @@ title: Neat Starter
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+{% include "./_includes/partials/index.hero.html" %}
+{% include "./_includes/partials/index.vision.html" %}
+{% include "./_includes/partials/index.meet.html" %}
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+<div class="h-16"></div>
 
-  {% include "./_includes/partials/content.html" %}
+<!--
+<div class="container mx-auto justify-center items-center">
+  
+  <h2>Newsletter</h2>
+  
+  <p>Stuff about Celeste’s newsletter. Sign up today for Celeste’s newsletter delivered monthly to your inbox!</p>
+  
+  <div><a class="link purple" href="#">Sign Up</a></div>
+
 </div>
+
+<div class="container mx-auto justify-center items-center">
+  
+  <h2>Meet Celeste</h2>
+  
+  <p>Stuff about Celeste.</p>
+  
+  <div><a class="button" href="#">About Celeste</a></div>
+
+</div>
+
+<div class="container mx-auto justify-center items-center">
+  
+  <h2>Get Involved</h2>
+  
+  <p>Donate or volunteer, etc.</p>
+  
+  <div><a class="button" href="#">Learn How to Get Involved</a></div>
+
+</div>
+-->
+
+{# <div class="container mx-auto justify-center items-center">
+  {% include "./_includes/partials/content.html" %}
+</div> #}

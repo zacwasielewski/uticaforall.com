@@ -1,10 +1,28 @@
 ---
 items:
-  - text: Menu One
+  - text: Meet Celeste
+    url: "/meet-celeste"
+    items:
+      - text: Celeste’s Vision for Utica
+        url: "/vision"
+      - text: About Celeste
+        url: "/about"
+  - text: Get Involved
+    url: "/get-involved"
+    items:
+      - text: Volunteer
+        url: "/volunteer"
+      - text: Events
+        url: "/events"
+      - text: Request a Lawn Sign
+        url: "/lawn-sign"
+  - text: Resources
     url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
-    url: "/blog"
+    items:
+      - text: Newsletter
+        url: "/newsletter"
+      - text: Videos
+        url: "/videos"
+  - text: Donate
+    url: "/donate"
+    button: true

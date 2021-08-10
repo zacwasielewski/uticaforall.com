@@ -17,9 +17,13 @@
     {% endif %}
   </head>
   <body>
-    {% include "./partials/navbar.html" %}
+    <div class="relative z-20">
+      {% include "./partials/navbar.html" %}
+    </div>
 
-    {{ content | safe }}
+    <div class="relative z-10">
+      {{ content | safe }}
+    </div>
 
     {% include "./partials/footer.html" %}
 
