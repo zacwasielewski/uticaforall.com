@@ -9,7 +9,7 @@
     
     <!--Logo etc-->
     <div class="flex items-center text-center font-display">
-      <a href="/" class="p-4 text-4xl text-white">
+      <a href="/" class="p-4 text-3xl sm:text-4xl text-white">
         <div>
           <span class="">Celeste</span>
           <span class="font-bold">Friend</span>
@@ -30,14 +30,14 @@
       </button>
 
       <!--Menu-->
-      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center"
+      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-2xl lg:text-base text-center"
         :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
         @click.away="isOpen = false"
         x-show.transition="true">
 
         {% if navigation.items %}
 
-          <ul class="lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
+          <ul class="pb-4 lg:py-0 list-reset lg:flex justify-end flex-1 items-center">
             {% for item in navigation.items %}
               <li class="nav__item relative"
                 x-data="{ isOpen: false }"
@@ -47,12 +47,12 @@
                 <!--Nav item link-->
                 {% if item.button %}
                   <a
-                    class="button justify-center items-center mx-3"
+                    class="button justify-center items-center mx-3 my-4 lg:my-0"
                     href="{{ item.url }}"
                     >{{ item.text }}</a>
                 {% else %}
                   <a
-                    class="flex justify-center items-center inline-block text-white no-underline py-3 px-4 uppercase tracking-wide rounded hover:bg-purple-700 hover:bg-opacity-50"
+                    class="flex justify-center items-center inline-block text-white no-underline px-4 py-4 lg:py-3 lg:px-4 uppercase tracking-wide rounded hover:bg-purple-700 hover:bg-opacity-50"
                     href="{{ item.url }}"
                     
                     {% if item.items %}
@@ -70,7 +70,7 @@
                 <!--Dropdown menu-->
                 {% if item.items %}
                   <div
-                    class="text-left text-base absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    class="lg:text-left lg:text-base lg:absolute lg:mt-2 lg:w-56 lg:rounded-md lg:shadow-lg lg:bg-white ring-1 ring-black ring-opacity-5 focus:outline-none mb-4 lg:mb-0"
 
                     role="menu"
                     aria-orientation="vertical"
@@ -78,19 +78,23 @@
                     tabindex="-1"
                     
                     x-show="isOpen"                    
-                    x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter="lg:transition ease-out duration-100"
                     x-transition:enter-start="opacity-0 transform scale-90"
                     x-transition:enter-end="opacity-100 transform scale-100"
-                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave="lg:transition ease-in duration-75"
                     x-transition:leave-start="opacity-100 transform scale-100"
                     x-transition:leave-end="opacity-0 transform scale-90"
 
                     @click.away="isOpen = false"
                     >
-                    <div class="py-2" role="none">
+                    <div class="lg:py-2" role="none">
                       {% for item in item.items %}
                         <a href="{{ item.url }}"
-                          class="block px-4 py-2 text-base text-purple hover:bg-purple-200"
+                          class="block px-4 py-2
+                          text-white
+                          hover:bg-purple-700
+                          lg:text-base lg:text-purple
+                          lg:hover:bg-purple-200"
                           role="menuitem"
                           tabindex="-1">{{ item.text }}</a>
                       {% endfor %}
