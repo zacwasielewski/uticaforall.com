@@ -43,19 +43,19 @@ body pre[class*="language-"] {
 }
 
 .link {
-  @apply border-b-2 border-purple border-opacity-30;
+  @apply text-purple-700 border-b-2 border-purple-700 border-opacity-30;
 }
 
 .link:hover {
-  @apply border-opacity-80 transition-all;
+  @apply text-purple-600 border-purple-600 border-opacity-80 transition-all;
 }
 
 .link.white {
-  @apply border-b-2 border-white border-opacity-30;
+  @apply text-purple-50 border-b-2 border-white border-opacity-30;
 }
 
 .link.white:hover {
-  @apply border-opacity-80 transition-all;
+  @apply text-white border-opacity-80 transition-all;
 }
 
 .button {

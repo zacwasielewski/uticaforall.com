@@ -29,7 +29,14 @@ module.exports = {
         'lg': '1200px',
         'xl': '1480px',
         '2xl': '1800px',
-      }
+      },
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
     colors: {
       transparent: 'transparent',
