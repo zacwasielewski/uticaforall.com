@@ -28,7 +28,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
-        options: ["How Utica Works"]
+        options: ["How Utica Works", "South Utica Newsletter"]
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
