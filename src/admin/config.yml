@@ -42,6 +42,8 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Bio", name: "bio", widget: "markdown", required: false }
       - { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int" }
+    sortable_fields: ['order']
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
