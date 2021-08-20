@@ -29,23 +29,19 @@ collections:
         multiple: true
         create: true
         options: ["How Utica Works", "South Utica Newsletter"]
-  - label: "Team"
-    name: "team"
-    folder: "src/_content/team"
+  - label: "Bios"
+    label_singular: "Bio"
+    description: "Bios of our volunteers"
+    name: "bios"
+    folder: "src/_content/bios"
     create: true
     editor:
       preview: false
+    identifier_field: name
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string", required: false }
-      - { label: "PDF", name: "pdf", widget: "file" }
-      - { label: "Publish Date", name: "date", widget: "date" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["How Utica Works", "South Utica Newsletter"]
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Bio", name: "bio", widget: "markdown", required: false }
+      - { label: "Photo", name: "photo", widget: "image" }
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
