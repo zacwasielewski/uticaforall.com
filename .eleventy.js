@@ -12,9 +12,7 @@ module.exports = function (eleventyConfig) {
 
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
-    );
+    return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toLocaleString(DateTime.DATE_FULL);
   });
 
   // Syntax Highlighting for Code blocks
@@ -36,6 +34,9 @@ module.exports = function (eleventyConfig) {
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
+
+  // Copy Netlify CMS media Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/media");
 
   // Copy favicon to route of /_site
   //eleventyConfig.addPassthroughCopy("./src/favicon.ico");

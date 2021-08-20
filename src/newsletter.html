@@ -42,9 +42,40 @@ path: newsletter
   <hr class="my-16">
   
   <h1 class="text-6xl text-purple-700 font-display font-light mt-16">Past Newsletters</h1>
-
-  <p class="text-3xl text-purple-700 my-4 max-w-4xl leading-normal font-light">
-    Coming soon
-  </p>
+  
+  <section class="mt-15 font-sans">
+    {% set postslist = collections.newsletters %}
+    
+    {% for post in postslist | reverse %}
+      <article class="my-8">
+        <div class="text-base leading-6 text-gray-500 mb-1">
+          <time>{{ post.date | readableDate }}</time>
+        </div>
+        
+        <h2 class="text-3xl text-gray-900 mb-2">
+          <a href="{{ post.data.pdf | url }}">
+            {% if post.data.title %}
+              {{ post.data.title }}
+            {% else %}
+              Untitled
+            {% endif %}
+          </a>
+        </h2>
+        
+        {% if post.data.description %}
+          <div class="text-lg text-gray-500 mb-3">
+            {{ post.data.description }}
+          </div>
+        {% endif %}
+        
+        <div class="text-lg">
+          <a href="{{ post.data.pdf | url }}" class="link">
+            Read More →
+          </a>
+        </div>
+      
+      </article>
+    {% endfor %}
+  </section>
   
 </div>

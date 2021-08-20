@@ -29,6 +29,23 @@ collections:
         multiple: true
         create: true
         options: ["How Utica Works", "South Utica Newsletter"]
+  - label: "Team"
+    name: "team"
+    folder: "src/_content/team"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "PDF", name: "pdf", widget: "file" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["How Utica Works", "South Utica Newsletter"]
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
