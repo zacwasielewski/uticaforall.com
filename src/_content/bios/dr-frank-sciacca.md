@@ -15,4 +15,5 @@ bio: >
 
   We are so happy that Frank has agreed to continue to volunteer as the Treasurer for our campaign.
 photo: /static/media/treasurer.jpg
+order: 40
 ---
