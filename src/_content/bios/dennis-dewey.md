@@ -9,4 +9,5 @@ bio: >
 
   Dennis moved to South Utica with his wife and children in 1987. He is a retired teacher (secondary English), pastor (Stone Church, Clinton) and international storyteller. He has been using his videography skills in retirement to spotlight Utica businesses and help with this campaign.
 photo: /static/media/dennis-dewey-videographer.jpg
+order: 30
 ---
