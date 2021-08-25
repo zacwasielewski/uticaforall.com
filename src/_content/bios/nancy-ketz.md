@@ -1,8 +1,7 @@
 ---
 name: Nancy Ketz
 bio: >
-  During the current campaign, Nancy has agreed to act in a new role as
-  volunteer coordinator!
+  During the current campaign, Nancy has agreed to act in a new role as volunteer coordinator!
 
 
   We know Nancy will bring the enthusiasm required to recruit and motivate individuals for the many roles needed in a grassroots campaign like ours.

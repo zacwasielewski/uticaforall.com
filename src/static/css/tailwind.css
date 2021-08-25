@@ -42,6 +42,15 @@ body pre[class*="language-"] {
   @apply sm:indent-16;
 }
 
+.typeset {
+}
+
+.typeset p {
+}
+.typeset p:not(:first-child) {
+  @apply indent-12;
+}
+
 .link {
   @apply text-purple-700 border-b-2 border-purple-700 border-opacity-30;
 }
