@@ -6,9 +6,9 @@ path: team
 
 <div class="container mx-auto py-8 lg:py-16 justify-center items-center flow-root">
   
-  <h1 class="text-4xl lg:text-8xl text-purple-800 font-display font-normal lg:font-light">Our Team</h1>
+  <h1 class="heading">Our Team</h1>
   
-  <p class="text-2xl lg:text-3xl my-4 max-w-4xl leading-normal text-purple-800 font-light">Volunteers make many things happen&#8230; thank you postcard writers! &#8230;and canvassers, and people who cook dinners for volunteers, videographer, still photographer, web page designers, strategists, a treasurer, etc.
+  <p class="lead">Volunteers make many things happen. Thank you postcard writers&#8230; and canvassers, and people who cook dinners for volunteers, videographers, still photographers, web page designers, strategists, our treasurer, and more.
   </p>
   
   <div class="h-4 lg:h-8"></div>
@@ -20,7 +20,7 @@ path: team
     {% for post in postslist | reverse %}
       <article class="my-8 flow-root">
         
-        <h2 class="font-display text-4xl font-bold mb-2">
+        <h2 class="font-display text-4xl font-bold mb-3">
           <a href="{{ post.data.pdf | url }}">
             {% if post.data.name %}
               {{ post.data.name }}
@@ -30,10 +30,10 @@ path: team
           </a>
         </h2>
 
-        <img src="{{ post.data.photo }}" class="w-96 h-96 object-cover object-center float-right ml-8 mb-8 transform rotate-3 shadow rounded-lg" />
+        <img src="{{ post.data.photo }}" class="w-96 h-96 object-cover object-center float-right ml-8 mb-8 -mt-4 transform rotate-3 shadow rounded-lg" />
         
         {% if post.data.bio %}
-          <div class="text-2xl mb-3 font-normal typeset">
+          <div class="text-2xl mb-3 font-normal typeset max-w-3xl">
             {{ post.data.bio | markdown | safe }}
           </div>
         {% endif %}
@@ -44,5 +44,7 @@ path: team
   </div>
   
   <div class="h-8"></div>
+
+  <p><a href="/join" class="text-xl button purple text-purple no-underline">Join Our Team</a></p>
 
 </div>

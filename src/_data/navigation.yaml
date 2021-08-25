@@ -10,8 +10,10 @@ items:
   - text: Get Involved
     url: "#"
     items:
-      - text: Join Our Team
-        url: "/join"
+      - text: Volunteer
+        url: "/volunteer"
+      - text: Our Team
+        url: "/team"
       - text: Events
         url: "/events"
   - text: Learn

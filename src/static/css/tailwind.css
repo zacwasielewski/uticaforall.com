@@ -28,29 +28,6 @@ body pre[class*="language-"] {
   @apply bg-gray-800;
 }
 
-.body-copy {
-  @apply text-3xl; /* WHAT! TAilwind is applying line-height in rems with this */
-}
-
-.body-copy {
-  @apply max-w-3xl text-xl leading-normal font-serif;
-  @apply lg:text-2xl;
-}
-
-.body-copy > p:not(.first) {
-  @apply indent-8;
-  @apply sm:indent-16;
-}
-
-.typeset {
-}
-
-.typeset p {
-}
-.typeset p:not(:first-child) {
-  @apply indent-12;
-}
-
 .link {
   @apply text-purple-700 border-b-2 border-purple-700 border-opacity-30;
 }
@@ -88,4 +65,41 @@ body pre[class*="language-"] {
     clip-path: url(#hero-mask);
     min-height: 105vh;
   }
+}
+
+#site-footer-newsletter {
+  background-image: url(/static/img/porch.jpg);  
+  
+  @apply bg-cover bg-center bg-fixed bg-purple;  
+}
+
+.heading {
+  @apply text-4xl lg:text-8xl text-purple-800 font-display font-normal lg:font-light;
+}
+
+.lead {
+  @apply text-2xl lg:text-3xl text-purple-800 my-4 max-w-4xl lg:leading-snug font-medium font-display;
+}
+
+.body-copy {
+  @apply text-3xl; /* WHAT! TAilwind is applying line-height in rems with this */
+}
+
+.body-copy {
+  @apply max-w-3xl text-xl leading-normal font-serif;
+  @apply lg:text-2xl lg:leading-normal;
+}
+
+.body-copy > p:not(.first) {
+  @apply indent-8;
+  @apply sm:indent-16;
+}
+
+.typeset {
+}
+
+.typeset p {
+}
+.typeset p:not(:first-child) {
+  @apply indent-12;
 }
