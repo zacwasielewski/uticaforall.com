@@ -4,7 +4,7 @@ title: Newsletter
 path: newsletter
 ---
 
-<div class="container mx-auto my-16 justify-center items-center">
+<div class="container mx-auto my-8 sm:my-16 justify-center items-center">
   
   <h1 class="heading">Newsletter</h1>
   
@@ -18,7 +18,7 @@ path: newsletter
 
     <p class="max-w-3xl text-xl sm:text-2xl font-serif leading-normal sm:leading-normal">So she writes a regular monthly newsletter that keeps people informed of business before the Council, how she votes, and other important information about Utica in general and South Utica in particular. She also writes a series of newsletters called “How Utica Works,” which explains various functions of city government. Sign up today and be in the loop!</p>
   
-    <div class="bg-purple-800 shadow sm:rounded-lg text-left my-8 sm:my-0">
+    <div class="bg-purple-800 shadow rounded-lg text-left my-8 sm:my-0">
       <div class="px-4 py-4 sm:p-8 text-3xl">
         <h3 class="text-3xl text-white leading-none">
           Stay Informed
@@ -26,12 +26,12 @@ path: newsletter
         <div class="my-4 max-w-xl text-2xl text-white whitespace-nowrap">
           Sign up for Celeste’s newsletter
         </div>
-        <form class="my-1 sm:flex sm:items-center" netlify>
+        <form class="my-1 sm:flex sm:items-center space-y-4 sm:space-y-0" netlify>
           <div class="w-full sm:max-w-sm">
             <label for="email" class="sr-only">Email</label>
             <input type="text" size="30" name="email" id="email" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full max-w-full text-xl text-black border-gray-300 rounded-md" placeholder="your email address">
           </div>
-          <button type="submit" class="button text-base whitespace-nowrap ml-3">
+          <button type="submit" class="button text-base whitespace-nowrap sm:ml-3">
             Sign up
           </button>
         </form>
@@ -39,9 +39,9 @@ path: newsletter
     </div>
   </div>
   
-  <hr class="my-16">
+  <hr class="my-8 sm:my-16">
   
-  <h1 class="text-6xl text-purple-700 font-display font-light mt-16">Past Newsletters</h1>
+  <h1 class="heading">Past Newsletters</h1>
   
   <section class="mt-15 font-sans">
     {% set postslist = collections.newsletters %}
