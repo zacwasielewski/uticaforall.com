@@ -1,5 +1,6 @@
 ---
 name: Andy Zygmunt
+title: Campaign Manager
 bio: >
   Andy Zygmunt is our Campaign Manager. Andy works at least as hard as Celeste
   does, and is deeply invested in creating a better political culture in Utica.

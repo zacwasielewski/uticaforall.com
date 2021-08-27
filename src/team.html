@@ -18,9 +18,9 @@ path: team
     {% set postslist = collections.bios %}
     
     {% for post in postslist | reverse %}
-      <article class="my-8 flow-root">
+      <article class="my-12 flow-root">
         
-        <h2 class="font-display text-4xl font-bold mb-3">
+        <h2 class="font-display text-4xl font-light mb-2">
           <a href="{{ post.data.pdf | url }}">
             {% if post.data.name %}
               {{ post.data.name }}
@@ -29,6 +29,10 @@ path: team
             {% endif %}
           </a>
         </h2>
+
+        <div class="text-2xl italic mb-4">
+          {{ post.data.title }}
+        </div>
 
         <img src="{{ post.data.photo }}" class="w-96 h-96 object-cover object-center float-right ml-8 mb-4 sm:mb-8 sm:-mt-4 transform sm:rotate-3 shadow rounded-lg" />
         

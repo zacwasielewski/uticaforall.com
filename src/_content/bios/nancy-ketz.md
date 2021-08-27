@@ -1,5 +1,6 @@
 ---
 name: Nancy Ketz
+title: Volunteer Coordinator
 bio: >
   During the current campaign, Nancy has agreed to act in a new role as volunteer coordinator!
 

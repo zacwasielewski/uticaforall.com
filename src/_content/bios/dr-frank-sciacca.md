@@ -1,5 +1,6 @@
 ---
 name: Dr. Frank Sciacca
+title: Campaign Treasurer
 bio: >
   Frank is our Treasurer, filing all the required financial reports with the State of New York. (And I have to say, this is one of my favorite pictures of Frank.) With our grassroots campaign, he tracks all donations, and later this election season, will permit us to seek endorsement from Trailblazers PAC. “Trailblazers give voters the power to take back their rightful role in our democratic republic by moving politics out of the back room and onto the front porch.”
 
