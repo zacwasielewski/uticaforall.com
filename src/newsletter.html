@@ -41,41 +41,79 @@ path: newsletter
   
   <hr class="my-8 sm:my-16">
   
-  <h1 class="heading">Past Newsletters</h1>
+  <h2 class="font-display font-purple font-light text-7xl mb-16">Past Newsletters</h2>
   
   <section class="mt-15 font-sans">
-    {% set postslist = collections.newsletters %}
     
-    {% for post in postslist | reverse %}
-      <article class="my-8">
-        <div class="text-base leading-6 text-gray-500 mb-1">
-          <time>{{ post.date | readableDate }}</time>
-        </div>
-        
-        <h2 class="text-3xl text-gray-900 mb-2">
-          <a href="{{ post.data.pdf | url }}">
-            {% if post.data.title %}
-              {{ post.data.title }}
-            {% else %}
-              Untitled
+    <div class="w-full sm:flex sm:space-x-8">
+      <div class="sm:w-1/2">
+        <h3 class="font-display text-4xl font-normal">South Utica Newsletter</h3>
+        {% for post in collections.southUticaNewsletter | reverse %}
+          <article class="my-8">
+            <div class="text-base leading-6 text-gray-500 mb-1">
+              <time>{{ post.date | readableDate }}</time>
+            </div>
+            
+            <h2 class="text-3xl text-gray-900 mb-2">
+              <a href="{{ post.data.pdf | url }}">
+                {% if post.data.title %}
+                  {{ post.data.title }}
+                {% else %}
+                  Untitled
+                {% endif %}
+              </a>
+            </h2>
+            
+            {% if post.data.description %}
+              <div class="text-lg text-gray-500 mb-3">
+                {{ post.data.description }}
+              </div>
             {% endif %}
-          </a>
-        </h2>
-        
-        {% if post.data.description %}
-          <div class="text-lg text-gray-500 mb-3">
-            {{ post.data.description }}
-          </div>
-        {% endif %}
-        
-        <div class="text-lg">
-          <a href="{{ post.data.pdf | url }}" class="link">
-            Read More →
-          </a>
-        </div>
+            
+            <div class="text-lg">
+              <a href="{{ post.data.pdf | url }}" class="link">
+                Download PDF →
+              </a>
+            </div>
+          
+          </article>
+        {% endfor %}
+      </div>
       
-      </article>
-    {% endfor %}
+      <div class="sm:w-1/2">
+        <h3 class="font-display text-4xl font-normal">How Utica Works</h3>
+        {% for post in collections.howUticaWorksNewsletter | reverse %}
+          <article class="my-8">
+            <div class="text-base leading-6 text-gray-500 mb-1">
+              <time>{{ post.date | readableDate }}</time>
+            </div>
+            
+            <h2 class="text-3xl text-gray-900 mb-2">
+              <a href="{{ post.data.pdf | url }}">
+                {% if post.data.title %}
+                  {{ post.data.title }}
+                {% else %}
+                  Untitled
+                {% endif %}
+              </a>
+            </h2>
+            
+            {% if post.data.description %}
+              <div class="text-lg text-gray-500 mb-3">
+                {{ post.data.description }}
+              </div>
+            {% endif %}
+            
+            <div class="text-lg">
+              <a href="{{ post.data.pdf | url }}" class="link">
+                Download PDF →
+              </a>
+            </div>
+          
+          </article>
+        {% endfor %}
+      </div>
+    </div>
   </section>
   
 </div>

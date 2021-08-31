@@ -16,6 +16,13 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toLocaleString(DateTime.DATE_FULL);
   });
 
+  eleventyConfig.addCollection("southUticaNewsletter", function(collectionApi) {
+    return collectionApi.getFilteredByTag("South Utica Newsletter");
+  });
+  eleventyConfig.addCollection("howUticaWorksNewsletter", function(collectionApi) {
+    return collectionApi.getFilteredByTag("How Utica Works");
+  });
+
   // Expose `md` as a template filter
   const md = new markdownIt({
     html: true,

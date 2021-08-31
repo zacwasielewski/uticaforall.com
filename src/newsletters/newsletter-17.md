@@ -1,7 +1,7 @@
 ---
 title: "South Utica Newsletter #17"
-pdf: /static/media/Newsletter #17.pdf
-date: 2021-07-02T09:00:00.000Z
+pdf: "/static/media/South Utica Newsletter 17.pdf"
+date: 2021-07-02
 tags:
   - South Utica Newsletter
 ---
