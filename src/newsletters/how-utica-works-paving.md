@@ -1,5 +1,5 @@
 ---
-title: "How Utica Works #2: Paving"
+title: "How Utica Works: Paving"
 pdf: /static/media/HUW Paving.pdf
 date: 2021-02-21T17:00:00.000Z
 tags:
