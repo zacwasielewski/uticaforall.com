@@ -1,7 +1,7 @@
 ---
-title: "Newsletter #7"
-pdf: /static/media/Newsletter #7.pdf
-date: 2020-09-06T00:00:00.000Z
+title: "Newsletter #11"
+pdf: /static/media/Newsletter #11.pdf
+date: 2021-01-01T00:00:00.000Z
 tags:
   - South Utica Newsletter
 ---
