@@ -1,4 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:ital@0;1&display=swap');*/
 @import url("https://use.typekit.net/isj2oqo.css");
 
 @tailwind base;
@@ -86,13 +85,12 @@ body pre[class*="language-"] {
 }
 
 .body-copy {
-  @apply max-w-3xl text-xl leading-normal font-serif;
+  @apply max-w-3xl text-xl leading-normal font-sans font-light;
   @apply lg:text-2xl lg:leading-normal;
 }
 
-.body-copy > p:not(.first) {
-  @apply indent-8;
-  @apply sm:indent-16;
+.body-copy > p {
+  @apply mb-4;
 }
 
 .typeset {
