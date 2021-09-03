@@ -73,11 +73,11 @@ body pre[class*="language-"] {
 }
 
 .heading {
-  @apply text-4xl lg:text-8xl text-purple-800 font-display font-normal lg:font-light;
+  @apply text-4xl lg:text-7xl text-purple-800 font-display font-normal lg:font-light;
 }
 
 .lead {
-  @apply text-2xl lg:text-3xl text-purple-800 my-4 max-w-4xl lg:leading-snug font-medium font-display;
+  @apply text-2xl lg:text-3xl text-purple-800 my-4 max-w-4xl lg:leading-snug font-medium font-sans;
 }
 
 .body-copy {
