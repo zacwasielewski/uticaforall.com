@@ -73,19 +73,15 @@ body pre[class*="language-"] {
 }
 
 .heading {
-  @apply text-4xl lg:text-7xl text-purple-800 font-display font-normal lg:font-light;
+  @apply text-4xl lg:text-8xl text-purple-800 font-display font-normal lg:font-bold;
 }
 
 .lead {
-  @apply text-2xl lg:text-3xl text-purple-800 my-4 max-w-4xl lg:leading-snug font-medium font-sans;
+  @apply text-2xl lg:text-3xl text-purple-800 my-4 max-w-4xl lg:leading-snug font-medium font-serif;
 }
 
 .body-copy {
-  @apply text-3xl; /* WHAT! TAilwind is applying line-height in rems with this */
-}
-
-.body-copy {
-  @apply max-w-3xl text-xl leading-normal font-sans font-light;
+  @apply max-w-3xl text-lg leading-normal font-serif font-light;
   @apply lg:text-2xl lg:leading-normal;
 }
 

@@ -65,8 +65,9 @@ module.exports = {
     extend: {
       fontFamily: {
         "display": ["raleway", ...defaultTheme.fontFamily.sans],
-        "sans": [ "trade-gothic-next", ...defaultTheme.fontFamily.sans],
-        "serif": [ "source-serif-4", ...defaultTheme.fontFamily.serif],
+        "sans": [ "-calluna-sans", "trade-gothic-next", ...defaultTheme.fontFamily.sans],
+        "serif": [ "century-old-style-std", "-plantin", "-livory", "calluna", "source-serif-4", ...defaultTheme.fontFamily.serif],
+        "ui": [ "-calluna-sans", "trade-gothic-next", ...defaultTheme.fontFamily.sans],
       },
     },
   },
