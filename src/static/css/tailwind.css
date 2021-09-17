@@ -97,3 +97,7 @@ body pre[class*="language-"] {
 .typeset p:not(:first-child) {
   @apply indent-12;
 }
+
+input {
+  @apply text-purple-900;
+}
