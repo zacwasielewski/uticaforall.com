@@ -1,4 +1,4 @@
-<div class="w-full font-sans
+<div class="w-full font-ui
   {{ 'absolute bg-purple lg:bg-transparent' if path == 'home' }}
   {{ 'bg-purple ' if path !== 'home' }}
   ">
@@ -15,7 +15,7 @@
           <span class="font-bold">Friend</span>
         </div>
         
-        <div class="hidden sm:block text-base text-purple-300 font-sans">
+        <div class="hidden sm:block text-base text-purple-300">
           for Utica Common Council
         </div>        
       </a>
@@ -30,7 +30,7 @@
       </button>
 
       <!--Menu-->
-      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-2xl lg:text-base text-center"
+      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-2xl lg:text-base text-center  font-medium leading-snug"
         :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
         @click.away="isOpen = false"
         x-show.transition="true">

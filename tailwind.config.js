@@ -65,8 +65,9 @@ module.exports = {
     extend: {
       fontFamily: {
         "display": ["raleway", ...defaultTheme.fontFamily.sans],
-        "sans": [ "trade-gothic-next", ...defaultTheme.fontFamily.sans],
+        "sans": [ "proxima-nova", "trade-gothic-next", ...defaultTheme.fontFamily.sans],
         "serif": [ "source-serif-4", ...defaultTheme.fontFamily.serif],
+        "ui": [ "trade-gothic-next", ...defaultTheme.fontFamily.sans],
       },
     },
   },
