@@ -77,7 +77,7 @@ body pre[class*="language-"] {
 }
 
 .lead {
-  @apply text-2xl lg:text-3xl text-purple-800 my-4 max-w-4xl lg:leading-snug font-medium font-serif;
+  @apply text-2xl lg:text-3xl text-purple-800 my-4 max-w-4xl lg:leading-snug font-medium font-sans;
 }
 
 .body-copy {
