@@ -27,8 +27,18 @@ body pre[class*="language-"] {
   @apply bg-gray-800;
 }
 
+.small-caps {
+  font-variant-caps: small-caps;
+  font-feature-settings: "smcp";
+}
+
 .link {
-  @apply text-purple-700 border-b-2 border-purple-700 border-opacity-30;
+  @apply text-purple-700;
+  
+  text-decoration: underline;
+  text-decoration-color: rgba(theme('colors.purple.700'), 0.3);
+  text-decoration-thickness: .1em;
+  text-underline-offset: 0.15em;
 }
 
 .link:hover {
