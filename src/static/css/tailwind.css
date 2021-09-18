@@ -34,23 +34,25 @@ body pre[class*="language-"] {
 
 .link {
   @apply text-purple-700;
-  
   text-decoration: underline;
-  text-decoration-color: rgba(theme('colors.purple.700'), 0.3);
-  text-decoration-thickness: .1em;
-  text-underline-offset: 0.15em;
+  text-decoration-color: rgba(113, 43, 174, 0.3);
+  text-decoration-thickness: 0.08625em;
+  text-underline-offset: 0.175em;
 }
 
 .link:hover {
-  @apply text-purple-600 border-purple-600 border-opacity-80 transition-all;
+  @apply text-purple-600 transition-all;
+  text-decoration-color: rgba(137, 74, 205, 0.8);
 }
 
 .link.white {
-  @apply text-purple-50 border-b-2 border-white border-opacity-30;
+  @apply text-purple-50;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 .link.white:hover {
-  @apply text-white border-opacity-80 transition-all;
+  @apply text-white transition-all;
+  text-decoration-color: rgba(255, 255, 255, 0.8);
 }
 
 .button {
