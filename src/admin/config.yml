@@ -20,7 +20,7 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Description", name: "body", widget: "markdown", required: false }
       - { label: "PDF", name: "pdf", widget: "file" }
       - { label: "Publish Date", name: "date", widget: "date" }
       - widget: select

@@ -44,7 +44,7 @@ path: newsletter
   
   <hr class="my-8 sm:my-16">
   
-  <h2 class="font-display font-purple font-light text-7xl mb-16">Past Newsletters</h2>
+  <h2 class="font-display font-purple font-light text-7xl mb-16">Newsletter Archives</h2>
   
   <section class="mt-15 font-sans">
     
@@ -67,16 +67,16 @@ path: newsletter
               </a>
             </h2>
             
-            {% if post.data.description %}
+            {% if post.data.body %}
               <div class="text-lg text-gray-500 mb-3">
-                {{ post.data.description }}
+                {{ post.data.body }}
               </div>
             {% endif %}
             
             <div class="text-lg">
               <a href="{{ post.data.pdf | url }}" class="link">
-                Download PDF →
-              </a>
+                Download
+              </a> (PDF)
             </div>
           
           </article>
