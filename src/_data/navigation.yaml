@@ -23,6 +23,8 @@ items:
         url: "/newsletter"
       - text: Videos
         url: "/videos"
+      - text: How to Vote
+        url: "/how-to-vote"
   - text: Donate
     url: "/donate"
     button: true
