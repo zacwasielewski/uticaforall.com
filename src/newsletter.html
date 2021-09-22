@@ -52,13 +52,14 @@ path: newsletter
       <div class="sm:w-1/2">
         <h3 class="font-display text-4xl font-normal">South Utica Newsletter</h3>
         {% for post in collections.southUticaNewsletter | reverse %}
-          <article class="my-8">
+          
+          <article class="my-12">
             <div class="text-base leading-6 text-gray-500 mb-1">
               <time>{{ post.date | readableDate }}</time>
             </div>
             
             <h2 class="text-3xl text-gray-900 mb-2">
-              <a href="{{ post.data.pdf | url }}">
+              <a href="{{ post.data.pdf | url }}" class="link" target="_blank">
                 {% if post.data.title %}
                   {{ post.data.title }}
                 {% else %}
@@ -67,17 +68,23 @@ path: newsletter
               </a>
             </h2>
             
-            {% if post.data.body %}
-              <div class="text-lg text-gray-500 mb-3">
-                {{ post.data.body }}
-              </div>
+            {% if post.data.toc %}
+              <div class="text-lg text-gray-900 mb-2">
+                <p class="">In this issue:</p>
+                <ul class="list-disc">
+                  {% for topic in post.data.toc %}
+                    <li>{{ topic }}</li>
+                  {% endfor %}
+              </ul></div>
             {% endif %}
             
+            <!--
             <div class="text-lg">
               <a href="{{ post.data.pdf | url }}" class="link">
                 Download
               </a> (PDF)
             </div>
+            -->
           
           </article>
         {% endfor %}
@@ -86,13 +93,14 @@ path: newsletter
       <div class="sm:w-1/2">
         <h3 class="font-display text-4xl font-normal">How Utica Works</h3>
         {% for post in collections.howUticaWorksNewsletter | reverse %}
-          <article class="my-8">
+        
+          <article class="my-12">
             <div class="text-base leading-6 text-gray-500 mb-1">
               <time>{{ post.date | readableDate }}</time>
             </div>
             
             <h2 class="text-3xl text-gray-900 mb-2">
-              <a href="{{ post.data.pdf | url }}">
+              <a href="{{ post.data.pdf | url }}" class="link" target="_blank">
                 {% if post.data.title %}
                   {{ post.data.title }}
                 {% else %}
@@ -107,13 +115,15 @@ path: newsletter
               </div>
             {% endif %}
             
+            <!--
             <div class="text-lg">
               <a href="{{ post.data.pdf | url }}" class="link">
                 Download PDF →
               </a>
             </div>
-          
+            -->
           </article>
+          
         {% endfor %}
       </div>
     </div>
