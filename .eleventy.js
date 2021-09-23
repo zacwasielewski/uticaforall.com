@@ -3,6 +3,7 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
+const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -10,6 +11,8 @@ module.exports = function (eleventyConfig) {
 
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
+
+  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/seo.json"));
 
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {

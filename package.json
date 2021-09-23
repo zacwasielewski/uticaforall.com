@@ -28,6 +28,7 @@
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/forms": "^0.3.3",
     "autoprefixer": "^10.1.0",
+    "eleventy-plugin-seo": "^0.5.2",
     "postcss": "^8.2.1",
     "postcss-color-function": "^4.1.0"
   }

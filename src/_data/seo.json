@@ -1,0 +1,12 @@
+{
+  "title": "Celeste Friend",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "url": "https://www.uticaforall.com",
+  "author": "Zac Wasielewski",
+  "twitter": "celeste4utica",
+  "image": "/static/img/opengraph-facebook.png",
+  "options": {
+    "titleStyle": "minimalistic",
+    "titleDivider": "|"
+  }
+}
