@@ -10,6 +10,6 @@
   "options": {
     "titleStyle": "minimalistic",
     "titleDivider": "|",
-    "imageWithBaseUrl": true,
+    "imageWithBaseUrl": true
   }
 }
