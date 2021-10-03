@@ -4,12 +4,12 @@
   "url": "https://www.uticaforall.com",
   "author": "Zac Wasielewski",
   "twitter": "celeste4utica",
-  "imageWithBaseUrl": true,
   "image": "/static/img/opengraph-facebook.png",
   "twitterCardType": "summary_large_image",
   "twitterImage": "/static/img/opengraph-twitter.png",
   "options": {
     "titleStyle": "minimalistic",
-    "titleDivider": "|"
+    "titleDivider": "|",
+    "imageWithBaseUrl": true,
   }
 }
