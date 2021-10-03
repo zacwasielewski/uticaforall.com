@@ -5,11 +5,11 @@
   "author": "Zac Wasielewski",
   "twitter": "celeste4utica",
   "image": "/static/img/opengraph-facebook.png",
-  "twitterCardType": "summary_large_image",
   "twitterImage": "/static/img/opengraph-twitter.png",
   "options": {
     "titleStyle": "minimalistic",
     "titleDivider": "|",
-    "imageWithBaseUrl": true
+    "imageWithBaseUrl": true,
+    "twitterCardType": "summary_large_image"
   }
 }
