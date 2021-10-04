@@ -16,7 +16,10 @@ module.exports = function (eleventyConfig) {
 
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toLocaleString(DateTime.DATE_FULL);
+    return DateTime
+      .fromJSDate(dateObj, { zone: "UTC" })
+      .setLocale('en')
+      .toLocaleString(DateTime.DATE_FULL);
   });
 
   eleventyConfig.addCollection("southUticaNewsletter", function(collectionApi) {
