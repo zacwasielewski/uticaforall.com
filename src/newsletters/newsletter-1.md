@@ -5,5 +5,9 @@ date: 2020-01-01
 tags:
   - South Utica Newsletter
 toc:
-  - Introduction
+  - Upcoming Meetings and Events
+  - My Votes on the Common Council
+  - Constituent Services
+  - Spotlight on a Local Business
+  - Going on in the City
 ---

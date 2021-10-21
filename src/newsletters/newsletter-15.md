@@ -8,7 +8,7 @@ toc:
   - Roscoe Conkling Park Update
   - Don't Wish Cycle!
   - It's Time To Go Electric
-  - Spotlight on a Local Business: Slice Pizzeria
+  - "Spotlight on a Local Business: Slice Pizzeria"
   - Birds, Bees, and Our New Zoning Code
   - Volunteers Keep Utica Beautiful!
   - My Votes on the Council in April
