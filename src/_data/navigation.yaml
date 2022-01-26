@@ -25,6 +25,9 @@ items:
         url: "/videos"
       - text: How to Vote
         url: "/how-to-vote"
+      - text: Teachers’ Association Survey
+        url: "/survey-admin-comments"
+        
   - text: Donate
     url: "/donate"
     button: true
