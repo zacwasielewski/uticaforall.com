@@ -12,7 +12,7 @@ toc:
   - Second Annual Flower Show & Garden Tour - July 8&9
   - The "new" Daily Sentinel - now available at Cafe Domenico
   - Take Me Out to a Ballgame in Utica!
-  - Update: New Forest Cemetery
+  - Update\: New Forest Cemetery
   - Report from E&A - June 2022
   - Watch Common Council Meetings Online
   - No SUNA Meetings for July & August
